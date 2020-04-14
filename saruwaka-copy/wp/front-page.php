@@ -1,4 +1,4 @@
-  <?php get_header(); ?>
+<?php get_header(); ?>
   <?php
     $imgUri = get_template_directory_uri() . "/images";
   ?>
@@ -49,37 +49,47 @@
         <div class="cards-title">
           <span>新着記事</span>
         </div>
-        
+
         <div class="container">
-          <a class="card_link" href="#">
-            <img src="<?php echo $imgUri; ?>/icatch01.png" alt="アイキャッチ1" class="eyecatch">
-            <p class="title">記事のタイトルを表示する</p>
-            <p class="timestamp">2020/04/12</p>
-            <p class="cate-tag">HTML&CSS</p>
-          </a>
+        <?php 
+        if(have_posts()):
+          while(have_posts()) :
+            the_post();
+        ?>
 
           <a class="card_link" href="#">
-            <img src="<?php echo $imgUri; ?>/icatch01.png" alt="アイキャッチ1" class="eyecatch">
-            <p class="title">記事のタイトルを表示する</p>
-            <p class="timestamp">2020/04/12</p>
-            <p class="cate-tag">HTML&CSS</p>
+            <img src="<?php d4_EchoImageUri(); ?>/icatch01.png" alt="アイキャッチ1" class="eyecatch">
+            <p class="title"><?php the_title(); ?></p>
+            <p class="timestamp"><?php the_time("Y/m/d"); ?></p>
+            <p class="cate-tag">
+            <?php
+								$category = get_the_category();
+								if ($category[0]->cat_name) {
+									echo $category[0]->cat_name;
+								} else {
+									echo "未設定";
+								}
+						?>
+            </p>
           </a>
 
-          <a class="card_link" href="#">
-            <img src="<?php echo $imgUri; ?>/icatch01.png" alt="アイキャッチ1" class="eyecatch">
-            <p class="title">記事のタイトルを表示する</p>
-            <p class="timestamp">2020/04/12</p>
-            <p class="cate-tag">HTML&CSS</p>
-          </a>
+        <?php
+          endwhile;
+        else:
+          echo "<p>No Data!!!!</p>";
+        endif;
+        ?>
+        </div><!-- class="container" -->
 
-          <a class="card_link" href="#">
-            <img src="<?php echo $imgUri; ?>/icatch01.png" alt="アイキャッチ1" class="eyecatch">
-            <p class="title">記事のタイトルを表示する</p>
-            <p class="timestamp">2020/04/12</p>
-            <p class="cate-tag">HTML&CSS</p>
-          </a>
-        </div>
       </section>
+      <!-- <div id="pagination"> -->
+      <?php
+        if(function_exists('wp_pagenavi')){
+          wp_pagenavi();
+        }
+      ?>
+      <!-- </div> -->
+
     </div>
 
     <!-- サイドバー -->
