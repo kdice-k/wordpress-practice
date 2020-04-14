@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*
+Theme Name: サルワカ模写 WP化
+Theme URI: https://tmick.net
+Description: サルワカの模写をWP化する
+Version: 0.01
+Author: D4isk
+Author URI: https://tmick.net
+*/
+
+@import "./css/reset.css";
+@import "./css/d4_style.css";
