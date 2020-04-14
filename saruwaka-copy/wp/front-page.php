@@ -57,7 +57,7 @@
             the_post();
         ?>
 
-          <a class="card_link" href="#">
+          <a class="card_link" href="<?php the_permalink(); ?>">
             <img src="<?php d4_EchoImageUri(); ?>/icatch01.png" alt="アイキャッチ1" class="eyecatch">
             <p class="title"><?php the_title(); ?></p>
             <p class="timestamp"><?php the_time("Y/m/d"); ?></p>
