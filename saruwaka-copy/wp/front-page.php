@@ -82,7 +82,8 @@
         </div><!-- class="container" -->
 
       </section>
-      <!-- <div id="pagination"> -->
+
+      <!-- ページネーション -->
       <?php
         if(function_exists('wp_pagenavi')){
           wp_pagenavi();
