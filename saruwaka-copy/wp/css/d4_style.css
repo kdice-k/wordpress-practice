@@ -497,15 +497,57 @@ div#profile h2 {
  *  フッター 
  *--------------------------------------------------------------------------------
  */
-footer {
+footer div#copyright {
   width: 100%;
   height: 79px;
   text-align: center;
   background-color: #fff;
+  margin-top: 18px;
+  padding-top: 22px;
 }
 
-footer p {
-  line-height: 79px;
+footer div#copyright .terms a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #808080;
+}
+
+footer div#copyright .terms a:hover {
+  text-decoration: underline;
+}
+
+footer div#copyright .terms a::before {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 400; 
+  content: "\f144";
+}
+
+footer div#copyright .copy {
+  font-size: 14px;
+  color: #808080;
+  margin-top: 14px;
+}
+
+footer div#tohome {
+  text-align: center;
+}
+
+footer div#tohome a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #807171;
+  text-decoration: none;
+}
+
+footer div#tohome a:hover {
+  text-decoration: underline;
+  color: #808080;
+}
+
+footer div#tohome a::before {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f015";
 }
 
 /*--------------------------------------------------------------------------------
