@@ -1,0 +1,22 @@
+.list-test {
+  counter-reset: no;
+}
+.list-test {
+  list-style: none;
+}
+
+.list-test li::before {
+  counter-increment: no;
+  content: counter(no);
+
+  display: block;
+  background-color: yellow;
+  border: 1px solid red;
+  font-size: 24px;
+
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+
