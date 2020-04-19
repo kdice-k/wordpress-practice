@@ -46,7 +46,7 @@ function view_sitename(){
   $name = $_POST['name'];//ポストで受け取れる
 
   $html = '';
-  $to = 'kmt@tmick.net';
+  $to = 'renraku@tmick.net';
   $title = 'メール送信テスト from PHP';
   $content = $name;
 
