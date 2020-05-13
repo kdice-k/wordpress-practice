@@ -71,6 +71,11 @@
 								}
 						?>
             </p>
+            <p>アクセス数:
+            <?php 
+              echo getPostViews(get_the_ID());
+            ?>              
+            </p>
           </a>
 
         <?php
@@ -95,23 +100,7 @@
 
     <!-- サイドバー -->
     <aside id="side_bar">
-      <div id="category">
-        <h2 class="category-title">カテゴリー</h2>
-        <h3 class="icon_pc">HTML&CSS</h3>
-        <ul>
-          <li><a class="icon_mt" href="#">Webデザイン入門</a></li>
-          <li><a class="icon_mt" href="#">WordPressの使い方</a></li>
-          <li><a class="icon_mt" href="#">マテリアルデザイン入門</a></li>
-          <li><a class="icon_mt" href="#">リファレンス</a></li>
-        </ul>
-        <h3 class="icon_pc">in English</h3>
-        <h3 class="icon_pc">テクノロジー</h3>
-        <ul>
-          <li><a class="icon_mt" href="#">アプリ</a></li>
-          <li><a class="icon_mt" href="#">インターネット</a></li>
-          <li><a class="icon_mt" href="#">メディア・SEO</a></li>
-        </ul>
-      </div>
+      <?php get_template_part( "side", "category" ); ?>
 
       <div id="profile">
         <h2>フクサンについて</h2>

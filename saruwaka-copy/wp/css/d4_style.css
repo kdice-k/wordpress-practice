@@ -3,7 +3,7 @@
 /* 
   リセット
 */
-@import "reset.css";
+/* @import "reset.css"; */
 
 /*  */
 body {
@@ -330,8 +330,8 @@ div#category .icon_pc {
   padding-left: 48px;
   margin-bottom: 18px;
   background: url(../images/laptop-pc.png) no-repeat 26px center;
-    /* trasition */
-    transition: all 0.2s ease-in-out 0s;
+  /* trasition */
+  transition: all 0.2s ease-in-out 0s;
 }
 
 div#category ul li {

@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* @import "./css/reset.css"; */
+
+/* .cat-list a:before {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.cat-level-2 a::before {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f105";
+}
+
+.cat-item-7 > a::before {
+  font-family: "Font Awesome 5 Brands"; 
+  font-weight: 900; 
+  content: "\f3b9";
+}
+
+.cat-item-11 > a::before {
+  font-family: "Font Awesome 5 Brands"; 
+  font-weight: 900; 
+  content: "\f778";
+} */
+
+/*--------------------------------------------------------------------------------
+ *  カテゴリリスト用
+ *--------------------------------------------------------------------------------
+ */
+.category_list h3 {
+  color: white
+}
+
+.category_list {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: auto;
+}
+
+.category_list ul {
+  list-style: none;
+}
+
+.category_list li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: gainsboro;
+}
+
+.category_list li a:hover {
+  color: blueviolet;
+}
+
+/*
+  wp_list_categoriesにスタイルをあてる
+*/
+.categories {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: auto;
+}
+
+.categories h2 {
+  color: white;
+  font-size: 20px;
+}
+
+.categories a:before {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.categories li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: gainsboro;
+}
+.categories ul li {
+  list-style: none;
+  color: gray;
+}
+
+.children a:first-child::before {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f105";
+}
+
+.categories li a:hover {
+  color: blueviolet;
+}

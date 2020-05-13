@@ -84,8 +84,9 @@
 
     <!-- サイドバー -->
     <aside id="side_bar">
+    
       <div id="category">
-        <h2 class="category-title">カテゴリー</h2>
+        <h2 class="category-title">カテゴリー AAAAAA</h2>
         <h3 class="icon_pc">HTML&CSS</h3>
         <ul>
           <li><a class="icon_mt" href="#">Webデザイン入門</a></li>
